@@ -1,0 +1,15 @@
+.btn--quick,
+.btn--quick:link,
+.btn--quick:visited {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 0 0 5%;
+    align-items: center;
+
+    min-width: 0;
+    min-height: 0;
+
+    font-size: 2rem;
+    color: #000;
+    white-space: nowrap;
+}
