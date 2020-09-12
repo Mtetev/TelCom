@@ -22,6 +22,7 @@
         }
     
         &__icon {
+            margin: 1.5rem 0; // make entire hamburger clickable
             position: relative;
             
             &,
@@ -29,8 +30,8 @@
             &::after {
                 display: inline-block;
                 left: 0;
-                width: 3rem;
-                height: 3px;
+                width: 4rem;
+                height: 4px;
                 background-color: var(--color-primary);
     
                 transition: transform .2s ease-out,
@@ -44,11 +45,11 @@
             }
     
             &::before {
-                top: -.8rem;
+                top: -1.2rem;
             }
     
             &::after {
-                top: .8rem;
+                top: 1.2rem;
             }
         }
 
@@ -149,7 +150,8 @@
     flex-flow: row nowrap;
     justify-content: space-around;
     width: 100%;
-
+    padding-bottom: .75rem;
+    border-bottom: 1px solid #000;
 
     &__icon {
         font-size: 4rem;
@@ -170,5 +172,40 @@
 
 .searchbar {
     width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: stretch;
+
+    margin: .75rem 0;
+
+    &__input {
+        width: 90%;
+        height: 4rem;
+        
+        color: var(--color-grey-dark-3);
+        background-color: var(--color-grey-dark);
+        border: 1px solid #000;
+
+        &::placeholder {
+            color: var(--color-grey-dark-3);
+        }
+    }
+
+    &__button {
+        position: relative;
+        width: 9%;
+        height: auto;
+        color: #fff;
+        background-color: var(--color-grey-dark-3);
+        border: none;
+    }
+
+    &__button, &__input {
+        font-size: 3rem;
+    }
     
+    &__icon {
+        @include absolute-center;
+    }
 }

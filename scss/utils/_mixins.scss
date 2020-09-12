@@ -1,0 +1,7 @@
+/// Sets an elemnt's position to absolute and centers it
+@mixin absolute-center {
+    position: absolute;
+    top: 50%; // 50% of nearest element with position set
+    left: 50%;
+    transform: translate(-50%, -50%); // 50% of own size
+}
