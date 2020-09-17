@@ -77,7 +77,7 @@
     }
 
     // FUNCTIONALITY
-    &-button:checked ~ & {
+    &-button:checked ~ &-button__label > & {
         display: block;
         transform: translateX(0);
     }
