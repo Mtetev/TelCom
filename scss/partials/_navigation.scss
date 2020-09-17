@@ -2,7 +2,8 @@
     display: hidden;
 
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    // background-color: var(--color-primary);
 
     position: fixed;
     top: auto;
@@ -84,7 +85,7 @@
 
 .nav-menu {
     display: block;
-    height: 300rem;;
+    height: 300rem;
     background-color: var(--color-primary);
 
     &, &__submenu {
@@ -106,22 +107,41 @@
     &__label {
         display: block;
         width: 100%;
+        height: 100%;
+
+        transition: all .3s;
 
         & > ul {
-            display: none;
+            max-height: 0px;
+            overflow: hidden;
+            transition: all .3s;
         }
     }
 
     &__title {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+
         padding: 1.5rem 0;
         padding-left: 1rem;
+        margin-right: 2rem;
 
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-weight: 400;
         text-decoration: none;
+        & * {
+            flex: 0;
+        }
+
+        &::after {
+            content: "+";
+        }
     }
 
     &__item {
+        // display: none;
+
         padding-top: 1rem;
         padding-left: 2rem;
 
@@ -139,8 +159,13 @@
         }
     }
 
+    &__checkbox:checked ~ &__label > &__title::after {
+        content: "-";
+    }
+
+    // Animate Open/close
     &__checkbox:checked ~ &__label > ul {
-        display: block;
+        max-height: 300px;
     }
 
 }
