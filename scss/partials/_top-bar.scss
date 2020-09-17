@@ -1,0 +1,44 @@
+.top-bar {
+
+    &__header {
+        color: var(--color-primary);
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+}
+
+.user-icons {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    flex: 0 0 20%;
+
+    &--1 {
+
+    }
+
+    &--2,
+    &--2:link,
+    &--2:visited {
+        position: relative;
+        font-size: 3rem;
+        color: var(--color-primary);
+
+        cursor: pointer;
+
+        &::after {
+            content: "34";
+
+            position: absolute;
+            background-color: red;
+            font-size: 1.5rem;
+            color: #fff;
+
+            border-radius: 300px;
+            top: -10%;
+            right: 0;
+        }
+    }
+}
