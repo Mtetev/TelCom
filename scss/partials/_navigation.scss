@@ -31,8 +31,8 @@
             &::after {
                 display: inline-block;
                 left: 0;
-                width: 4rem;
-                height: 4px;
+                width: 3.5rem;
+                height: 3px;
                 background-color: var(--color-primary);
     
                 transition: transform .2s ease-out,
@@ -46,11 +46,11 @@
             }
     
             &::before {
-                top: -1.2rem;
+                top: -1rem;
             }
     
             &::after {
-                top: 1.2rem;
+                top: 1rem;
             }
         }
 
@@ -164,9 +164,13 @@
         content: "-";
     }
 
-    // Animate Open/close
-    &__checkbox:checked ~ &__label > ul {
-        max-height: 300px;
+    &__checkbox:checked ~ &__label {
+        background-color: var(--color-primary-dark);
+        
+        // Open/close
+        & > ul {
+            max-height: 300px;
+        }
     }
 
 }
