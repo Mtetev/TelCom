@@ -28,7 +28,7 @@
         padding: 0 1rem;
     }
 
-    & *:hover {
+    & > *:hover {
         background-color: var(--color-grey-light-3);
     }
 
@@ -44,7 +44,6 @@
     &--2 {
         display: flex;
         align-items: center;
-
         overflow: visible;
     }
 
@@ -52,6 +51,8 @@
     &__mail:link,
     &__mail:visited {
         position: relative;
+        margin-bottom: -.4rem;
+
         font-size: 3rem;
         color: var(--color-primary);
 
