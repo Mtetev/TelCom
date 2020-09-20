@@ -67,3 +67,41 @@
         }
     }
 }
+
+.common-actions {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    &__link,
+    &__link:link,
+    &__link:visited,
+    &__link:active {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+
+        flex: 0 0 50%;
+        height: 7.5rem;
+        
+        // background-color: orangered;
+        // border: 1px solid #000;
+
+        text-decoration: none;
+    }
+
+    &__icon {
+        margin-bottom: 3px;
+        color: var(--color-primary);
+        font-size: 2.5rem;
+    }
+
+    &__text {
+        font-size: 1.25rem;
+        font-weight: 500;
+        letter-spacing: 1px;
+        color: $color-black;
+        text-transform: uppercase;
+    }
+}
