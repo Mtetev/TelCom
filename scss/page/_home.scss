@@ -1,3 +1,8 @@
+main {
+    // height: 1000rem; // TODO Only for testing REMOVE!!
+    background-color: var(--color-grey-light-2);
+}
+
 .top-bar {
     display: flex;
     justify-content: space-between;
@@ -42,5 +47,10 @@
     align-items: center;
 
     width: 100%;
-    overflow: hidden;
+    
+    margin-bottom: 8rem;
+}
+
+.footer {
+    width: 100%;
 }
