@@ -6,6 +6,8 @@
     width: 100%;
     height: 100%;
 
+    padding: 1rem 2rem;
+
     text-align: center;
     font-size: inherit;
     text-decoration: none;
@@ -25,3 +27,20 @@
         background-color: rgba($color-black, .5);
     }
 }
+
+.btn--oval,
+.btn--oval:link,
+.btn--oval:visited,
+.btn--oval:active {
+    border-radius: 3rem;;
+}
+
+.btn--white,
+.btn--white:link,
+.btn--white:visited,
+.btn--white:active {
+    background-color: rgba(#fff, 1.0);
+    color: $color-black;
+    transition: all .6s;
+}
+

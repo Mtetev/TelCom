@@ -7,7 +7,7 @@ $color-black: #101010;
     --color-primary-dark: #05649C;
 
     --color-secondary: #FF5C29;
-    --color-seconday-light: #FF7C52;
+    --color-secondary-light: #FF7C52;
     --color-secondary-dark: #F53B00;
     
     --color-tertiary: #FFC629;
@@ -18,12 +18,14 @@ $color-black: #101010;
     --color-grey-light-2: #eee;
     --color-grey-light-3: #ddd;
 
-    --color-grey-dark-1: #ddd;
-    --color-grey-dark-2: #999;
-    --color-grey-dark-3: #333;
+    --color-grey-dark-1: #aaa;
+    --color-grey-dark-2: #888;
+    --color-grey-dark-3: #666;
 
 
     // Sizes
     --top-bar-height: 7rem;
+
+    --offer-card-height: 55rem;
 
 }

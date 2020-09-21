@@ -19,5 +19,16 @@
 
 .section-splaschscreen {
     margin-top: ver(--top-bar-height);
+    margin-bottom: 8rem;
     overflow: hidden;
+}
+
+.section-plans {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+
+    @media screen and (min-width: 1024px) {
+        flex-flow: row nowrap;
+    }
 }
