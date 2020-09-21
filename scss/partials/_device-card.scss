@@ -1,0 +1,65 @@
+.device-card {
+    width: 95%;
+    padding-bottom: 1.5rem;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, .3);
+
+    &:not(:last-child) {
+        margin-bottom: 2.5rem;
+    }
+
+    &--1 {
+
+    }
+
+    &--2 {
+
+    }
+
+    &--3 {
+
+    }
+
+    &__image-wrapper {
+        height: 1rem;
+
+        overflow: hidden;
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__details {
+        width: 85%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        padding: 0 1.25rem;
+
+        & > *:not(:last-child) {
+            padding-bottom: .75rem;
+        }
+    }
+
+    &__header {
+        font-size: 3.5rem;
+        color: var(--color-primary);
+    }
+
+    &__description {
+        font-size: 1.5rem;
+        color: $color-black;
+        line-height: 1.4;
+    }
+
+    &__price {
+        margin: 1.5rem 0;
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+
+    &__cta {
+        font-size: 1.5rem;
+    }
+}
