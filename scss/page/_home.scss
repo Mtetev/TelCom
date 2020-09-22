@@ -1,5 +1,4 @@
 main {
-    // height: 1000rem; // TODO Only for testing REMOVE!!
     background-color: var(--color-grey-light-2);
 }
 
@@ -48,7 +47,7 @@ main {
 
     width: 100%;
     
-    margin-bottom: 8rem;
+    padding-bottom: 8rem; // extend the main element
 }
 
 .footer {
