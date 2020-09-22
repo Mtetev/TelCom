@@ -4,7 +4,7 @@
     align-items: center;
     width: 100vw;
 
-    background-image: url(../img/splaschscreen.jpg);
+    background-image: url(../img/splaschscreen-medium.jpg);
     background-size: cover;
     background-position: center;
 
@@ -46,6 +46,14 @@
             align-self: flex-start;
             margin-left: 7.5%;
         }
+    }
+
+    @media only screen and (min-width: $bp-medium) {
+        background-image: url(../img/splaschscreen-large.jpg);
+    }
+
+    @media only screen and (min-width: $bp-largest) {
+        background-image: url(../img/splaschscreen-huge.jpg);
     }
 }
 
