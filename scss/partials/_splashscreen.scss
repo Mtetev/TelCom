@@ -2,6 +2,7 @@
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    
     width: 100vw;
 
     background-image: url(../img/splaschscreen-medium.jpg);
@@ -11,19 +12,21 @@
     overflow: hidden;
 
     &__promotion-text {
+        width: 85%;
+        margin-top: 5rem;
+
         font-size: 3.5rem;
         color: #fff;
         line-height: 1;
         line-break: loose;
         text-align: left;
-        width: 85%;
-        margin-top: 5rem;
 
         & h2 {
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             display: inline;
+
             text-indent: 0px;
             font-size: inherit;
+
             background: var(--color-primary);
             
             &::selection {
@@ -33,23 +36,23 @@
     }
 
     &__cta {
+        width: 85%;
         margin-top: 2rem;
         margin-bottom: 5rem;
-        width: 85%;
         
         letter-spacing: 0;
         font-weight: 400;
         font-size: 2.25rem;
-
-        @media only screen and (min-width: $bp-medium) {
-            width: 30%;
-            align-self: flex-start;
-            margin-left: 7.5%;
-        }
     }
 
     @media only screen and (min-width: $bp-medium) {
         background-image: url(../img/splaschscreen-large.jpg);
+
+        &__cta {
+            align-self: flex-start;
+            width: 30%;
+            margin-left: 7.5%;
+        }
     }
 
     @media only screen and (min-width: $bp-largest) {
@@ -62,10 +65,11 @@
     background-color: #ffF;
 
     &__text {
+        padding: .5rem;
+
         font-size: 2.5rem;
         font-weight: 500;
         text-align: center;
-        padding: .5rem;
 
         &:not(:last-child) {
             margin-bottom: 1rem;
@@ -118,9 +122,6 @@
 
         flex: 0 0 50%;
         height: 7.5rem;
-        
-        // background-color: orangered;
-        // border: 1px solid #000;
 
         text-decoration: none;
     }
@@ -135,7 +136,7 @@
         font-size: 1.25rem;
         font-weight: 500;
         letter-spacing: 1px;
-        color: $color-black;
+        color: var(--color-black);
         text-transform: uppercase;
     }
 

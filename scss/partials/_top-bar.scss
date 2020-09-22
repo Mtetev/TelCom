@@ -1,6 +1,7 @@
 .top-bar__header {
     display: flex;
     align-items: center;
+
     color: var(--color-primary-dark);
     font-size: 2.5rem;
     font-weight: 500;
@@ -11,6 +12,11 @@
         text-decoration: none;
         cursor: pointer;
     }
+
+    @media only screen and (hover: hover) and (min-width: $bp-large) {
+        margin-left: 3rem;
+        order: 0;
+    }
 }
 
 .user-icons {
@@ -18,9 +24,9 @@
     flex-flow: row nowrap;
     justify-content: flex-end;
     align-items: stretch;
-    overflow: visible;
-
     flex: 0 1 10%;
+    
+    overflow: visible;
 
     cursor: pointer;
 
@@ -44,6 +50,7 @@
     &--2 {
         display: flex;
         align-items: center;
+
         overflow: visible;
     }
 
@@ -64,8 +71,9 @@
         top: -10%;
         right: 0;
 
-        background-color: red;
         padding: .2rem;
+        
+        background-color: red;
 
         font-size: 1.2rem;
         color: #fff;
@@ -84,15 +92,8 @@
     &__profile-name {
         font-size: 2rem;
     }
-}
 
-@media only screen and (hover: hover) and (min-width: $bp-large) {
-    .top-bar__header {
-        margin-left: 3rem;
-        order: 0;
-    }
-
-    .user-icons {
+    @media only screen and (hover: hover) and (min-width: $bp-large) {
         order: 2;
     }
 }

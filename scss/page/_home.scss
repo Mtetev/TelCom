@@ -7,9 +7,9 @@ main {
     justify-content: space-between;
     align-items: stretch;
     align-content: center;
+
     width: 100%;
     height: var(--top-bar-height);
-    // background-color: orangered;
 
     position: fixed;
     top: 0;
@@ -33,6 +33,7 @@ main {
     justify-content: space-evenly;
 
     max-width: 140rem;
+
     margin: 0 auto;
     margin-bottom: 8rem;
 }
@@ -40,7 +41,6 @@ main {
 .section-device-offers {
     max-width: 140rem;
     margin: 0 auto;
-
     padding-bottom: 8rem; // extend the main element
 }
 

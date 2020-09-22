@@ -19,12 +19,12 @@
 .btn--black:link,
 .btn--black:visited,
 .btn--black:active {
-    background-color: rgba($color-black, 1.0);
+    background-color: rgba(var(--rgb-color-black), 1.0);
     color: #fff;
     transition: all .6s;
 
     &:hover {
-        background-color: rgba($color-black, .5);
+        background-color: rgba(var(--rgb-color-black), .5);
     }
 }
 
@@ -40,7 +40,7 @@
 .btn--white:visited,
 .btn--white:active {
     background-color: rgba(#fff, 1.0);
-    color: $color-black;
+    color: var(--color-black);
 }
 
 .btn--primary,
