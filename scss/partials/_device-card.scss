@@ -1,6 +1,10 @@
 .device-card {
-    width: 95%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    flex: 0 0 95%;
     padding-bottom: 1.5rem;
+    //margin: 5rem 0;
     box-shadow: 2px 4px 4px rgba(0, 0, 0, .3);
 
     background-color: #fff;
@@ -9,30 +13,30 @@
         margin-bottom: 2.5rem;
     }
 
-    &--1 {
+    &__wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: stretch;
+        align-content: space-between;
+    
+        row-gap: 5rem;
 
+        width: 100%;
     }
 
-    &--2 {
-
-    }
-
-    &--3 {
-
-    }
-
-    &__image-wrapper {
-        height: 1rem;
+    &__upper {
+        height: auto;
 
         overflow: hidden;
     }
 
     &__image {
         width: 100%;
-        height: 100%;
+        height: auto;
     }
 
-    &__details {
+    &__lower {
         width: 85%;
         display: flex;
         flex-flow: column nowrap;
@@ -45,6 +49,10 @@
     }
 
     &__header {
+        margin-left: 1rem;
+        margin-top: 1.5rem;
+        margin: 1.5rem 0 1rem 1rem;
+
         font-size: 3.5rem;
         color: var(--color-primary);
     }
@@ -59,9 +67,24 @@
         margin: 1.5rem 0;
         font-size: 2.5rem;
         font-weight: bold;
+
+        order: 10;
     }
 
     &__cta {
         font-size: 1.5rem;
+        order: 11;
+    }
+
+    @media only screen and (min-width: $bp-medium) {
+        box-sizing: border-box;
+        border-bottom: 1rem solid transparent; // creates space between the rows
+        &--2, &--3 {
+            flex: 0 0 45%;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 0;
+        }
     }
 }

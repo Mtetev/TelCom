@@ -32,21 +32,22 @@ main {
     flex-flow: row wrap;
     justify-content: space-evenly;
 
+    max-width: 140rem;
+    margin: 0 auto;
     margin-bottom: 8rem;
-
-    @media screen and (min-width: 1024px) {
-        flex-flow: row nowrap;
-    }
 }
 
 .section-device-offers {
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-evenly;
-    align-items: center;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: space-between;
 
     width: 100%;
-    
+    max-width: 140rem;
+    margin: 0 auto;
+
     padding-bottom: 8rem; // extend the main element
 }
 
