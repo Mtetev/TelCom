@@ -16,11 +16,11 @@
 .user-icons {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: stretch;
     overflow: visible;
 
-    flex: 0 0 30%;
+    flex: 0 1 10%;
 
     cursor: pointer;
 
@@ -83,5 +83,16 @@
 
     &__profile-name {
         font-size: 2rem;
+    }
+}
+
+@media only screen and (hover: hover) and (min-width: $bp-large) {
+    .top-bar__header {
+        margin-left: 3rem;
+        order: 0;
+    }
+
+    .user-icons {
+        order: 2;
     }
 }

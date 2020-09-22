@@ -38,13 +38,6 @@ main {
 }
 
 .section-device-offers {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: stretch;
-    align-content: space-between;
-
-    width: 100%;
     max-width: 140rem;
     margin: 0 auto;
 
