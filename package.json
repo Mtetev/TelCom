@@ -13,7 +13,11 @@
   "scripts": {
     "watch:sass": "sass --watch scss/main.scss css/style.css",
     "devserver": "live-server",
-    "devstart": "npm-run-all --parallel watch:sass devserver"
+    "devstart": "npm-run-all --parallel watch:sass devserver",
+    "compile:sass": "sass scss/main.scss css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" css/style.comp.css -o css/style.prefix.css",
+    "compress:css": "sass --style=compressed css/style.prefix.css css/style.css",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
   },
   "author": "Miroslav Tetevenski",
   "license": "ISC"
