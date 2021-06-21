@@ -1,7 +1,7 @@
 # Project Name
 > TelCom is a landing page for a fictional telecommunication company.
 
-See live demo at TODO: ADD LINK 
+See live demo at: https://mtetev.github.io/TelCom/
 
 ## Table of contents
 * [Screenshots](#screenshots)
