@@ -11,7 +11,7 @@ See live demo at: https://mtetev.github.io/TelCom/
 * [Contact](#contact)
 
 ## Screenshots
-![Example screenshot](./img/screenshot.png)
+![Example screenshot](./readme-img/screenshot.png)
 
 ## Technologies
 * HTML5
